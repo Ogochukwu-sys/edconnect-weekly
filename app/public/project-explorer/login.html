@@ -1,22 +1,49 @@
 <html>
     <!doctype HTML>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    </head>
     <header>
-        <h1>Project Explorer</h1>
-        <h2>One Stop Database for Academic Projects</h2>
-    </header>
-    <nav>
-        <a href= "index.html">Home</a>
-        <a href= "search.html">Projects</a>
-        <a href= "login.html">Login</a>
-        <a href= "register.html">Register</a>
-        <a href= "createproject.html">Submit</a>
-    </nav>
-    <main>
-        <h1>Login</h1>
+        <!--left navigation-->
+       <nav class="navbar navbar-light bg-primary d-flex flex-row align-items-center">
+           <div class="d-flex flex-row align-items-center">
+            <div>
+                <h3 class="text-white p-2">Project Explorer</h3>
+            </div>
+            <form class="form-inline">
+                <input class="form-control p-2" type="text" placeholder="Search Projects"/>
+                <input class="button button-outline-light bg-primary border-white rounded text-white m-2" type="submit" value="Search"/>
+            </form>
+            <div>
+                <a href="#" class="text-white p-2">Submit</a>
+            </div>
+        </div>
+        <!--right navigation-->
+        <div>
+            <a href="#" class="text-white p-2">Sign Up</a>
+            <a href="#" class="text-white p-2" >Login</a>
+        </div>
+     </nav> 
+     </header>
+    <main class="w-50 mx-auto mt-5 mb-5">
+        <h2>Login</h2>
         <form>
-            <label>Email Address: </label><input type="email" name="email"></br>
-            <label>Password: </label><input type="password" name="password"></br>
-            <input type="submit" value="Submit">
+            <div class="form-group"></div>
+            <label>Email Address: </label><input type="email" name="email" 
+            placeholder= "Enter email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Password: </label><input type="password" name="password" 
+            placeholder="Password" class="form-control">
+        </div>
+            <input  class="btn btn-primary" type="submit" value="Login">
         </form>
     </main>
+        <!--footer section-->
+    <footer class="bg-light d-flex justify-content-end p-1 mb-5 mx-auto w-75">
+        <span>Project Explorer &copy; 2020</span>
+        <span class="spacer ml-1 mr-1">&middot;</span>
+        <a href="#">Edconnect</a>
+    </footer>
+    
 </html>

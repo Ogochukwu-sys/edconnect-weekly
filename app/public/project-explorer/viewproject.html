@@ -1,36 +1,95 @@
 <html>
     <!doctype HTML>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    </head>
     <header>
-        <h1>Project Explorer</h1>
-        <h2>One Stop Database for Academic Projects</h2>
-    </header>
-    <nav>
-        <a href= "index.html">Home</a>
-        <a href= "search.html">Projects</a>
-        <a href= "login.html">Login</a>
-        <a href= "register.html">Register</a>
-    </nav>
+        <!--left navigation-->
+       <nav class="navbar navbar-light bg-primary d-flex flex-row align-items-center pb-0 pt-0">
+           <div class="d-flex flex-row align-items-center">
+            <div>
+                <h3 class="text-white p-2">Project Explorer</h3>
+            </div>
+            <form class="form-inline">
+                <input class="form-control p-2" type="text" placeholder="Search Projects"/>
+                <input class="button button-outline-light bg-primary border-white rounded text-white m-2"
+                 type="submit" value="Search"/>
+            </form>
+            <div>
+                <a href="#" class="text-white p-2">Submit</a>
+            </div>
+        </div>
+        <!--right navigation-->
+        <div>
+            <a href="#" class="text-white p-2">Sign Up</a>
+            <a href="#" class="text-white p-2" >Login</a>
+        </div>
+     </nav> 
+     </header>
+    <main  class="w-75 mx-auto mt-5 mb-5">
+        <h3>Project 1</h3>
+        <div class="container mb-5 bg-light pt-3 pb-3">
+            <div class="row">
+            <div class="col-sm">
+                Created By</br>
+                Jane Doe
+            </div>
+            <div class="col-sm">
+                Date Created</br>
+                01/10/10
+            </div>
+                <div class="col-sm">
+                Last Updated</br>
+                02/10/10
+            </div>
+            <div class="col-sm d-flex justify-content-end">
+            <input type="submit" class="btn btn-primary" value="Edit Project"/>
+        </div>
+        </div>
+        </div>
     <main>
-        <section>
-            <h2>Project 1</h2>
-            <a href= "editproject.html">Edit Project</a>
-            <ul>
-                <li>Created By:Jane Doe</li>
-                <li>Date Created: 01/10/10</li>
-                <li>Last Updated: 02/10/10</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Project Abstract</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore iusto dolorum maiores voluptatibus necessitatibus, dolores iste in culpa reprehenderit? Nesciunt sequi maxime hic praesentium ipsum fugiat. Facilis neque aut error!</p>
-        </section>
-        <section>
-            <h3>Project Details</h3>
-            <ul>
-                <li>Authors: John Doe, Jane Doe</li>
-                <li>Tags: #AI</li>
-                <li>Project Files:<a href="File1.html">File 1</a>,<a href="File2.html">File 2</a></li>
-            </ul>
-        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+<h3 class="mb-4">Project Abstract</h3>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Ipsa iure provident voluptas facilis amet error, doloribus in autem facere nostrum 
+    ratione optio et sequi unde aliquam inventore dolores dignissimos? Iste.</p>
+               <div class="form-group">
+                <label class="form-label"><h5>Comments</h5></label>
+                <textarea id="abstract" class="form-control" name="abstract" rows="4" cols="20">
+                    </textarea> 
+               </div>
+               <input class="btn btn-primary" type="submit" value="Submit"/>
+                </div>
+                <div class="col-sm">
+                    <h3>Project Details</h3>
+                    <div class="card mt-5">
+                        <div class="card-header">
+                          Author(s)
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">Ade Chris</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">#web</a>
+                        </div>
+                      </div>
+                      <div class="card mt-5">
+                        <div class="card-header">
+                          Project Files
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">No file uploaded yet</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer class="bg-light d-flex justify-content-end p-1 mb-5 mt-5 mx-auto w-75">
+        <span>Project Explorer &copy; 2020</span>
+        <span class="spacer ml-1 mr-1">&middot;</span>
+        <a href="#">Edconnect</a>
+    </footer>
 </html>
